@@ -1,8 +1,10 @@
 const getAngkaTerbesarKedua = (personName) => {
   if (Array.isArray(personName)) {
-    // Sort array secara ascending menggunakan algoritma Bubble Sort
+    // Looping index
     for (let i = 0; i < personName.length; i++) {
+      // Looping perbandingan data
       for (let j = 0; j < personName.length - i - 1; j++) {
+        // Sort array secara ascending menggunakan algoritma Bubble Sort
         if (personName[j] > personName[j + 1]) {
           // Tukar elemen jika elemen ke-j lebih besar dari elemen ke-(j+1)
           let temp = personName[j];
