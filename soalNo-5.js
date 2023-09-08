@@ -62,9 +62,8 @@ function getInfoPenjualan(dataPenjualan) {
         typeof product.totalTerjual !== "number" ||
         typeof product.sisaStok !== "number"
       ) {
-        return "Properti totalTerjual, hargaBeli, dan hargaJual harus berupa angka";
-      }
-      if (
+        return "Properti hargaBeli, hargaJual, totalTerjual, dan sisaStok harus berupa angka";
+      } else if (
         typeof product.namaProduk !== "string" ||
         typeof product.penulis !== "string"
       ) {
